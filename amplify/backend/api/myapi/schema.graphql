@@ -1,0 +1,9 @@
+type ShoppingItem @model  {
+  id: ID!
+  user_id: String!
+  name: String!
+  shopping_date: AWSDateTime!
+  shop_name: String
+  description: String
+  status: Int
+}

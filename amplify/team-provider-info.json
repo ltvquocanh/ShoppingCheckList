@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-shoppinglist-dev-154132-authRole",
+      "UnauthRoleArn": "arn:aws:iam::046204480520:role/amplify-shoppinglist-dev-154132-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::046204480520:role/amplify-shoppinglist-dev-154132-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-shoppinglist-dev-154132-deployment",
+      "UnauthRoleName": "amplify-shoppinglist-dev-154132-unauthRole",
+      "StackName": "amplify-shoppinglist-dev-154132",
+      "StackId": "arn:aws:cloudformation:us-east-1:046204480520:stack/amplify-shoppinglist-dev-154132/984be840-0712-11ec-b2b1-0e72790b6507",
+      "AmplifyAppId": "d1u5czi3zl5ap4"
+    },
+    "categories": {
+      "auth": {
+        "shoppinglist1ef87449": {}
+      },
+      "function": {
+        "shoppinglist069f0e20": {
+          "deploymentBucketName": "amplify-shoppinglist-dev-154132-deployment",
+          "s3Key": "amplify-builds/shoppinglist069f0e20-4f674355384644716e78-build.zip"
+        },
+        "createUserShoppingItems": {
+          "deploymentBucketName": "amplify-shoppinglist-dev-154132-deployment",
+          "s3Key": "amplify-builds/createUserShoppingItems-6c35456f4f6d58306f33-build.zip"
+        }
+      }
+    }
+  }
+}

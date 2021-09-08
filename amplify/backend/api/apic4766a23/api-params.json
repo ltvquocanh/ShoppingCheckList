@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/items",
+      "lambdaFunction": "shoppinglist069f0e20",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/items"
+    }
+  ],
+  "resourceName": "apic4766a23",
+  "apiName": "apic4766a23",
+  "functionArns": [
+    {
+      "lambdaFunction": "shoppinglist069f0e20"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-shoppinglist-dev-154132-authRole",
+    "unAuthRoleName": "amplify-shoppinglist-dev-154132-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "shoppinglist069f0e20",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
