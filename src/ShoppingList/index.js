@@ -8,6 +8,8 @@ import { Table, Button, Form } from 'react-bootstrap';
 import { Label } from 'aws-amplify-react';
 import DatePicker from "react-datepicker";
 import AWS from 'aws-sdk';
+import awsConfig from '../awsconfiguration';
+
 import { endcodeUserName, decodeUserName, parseDateTostring } from '../Helper/Utils'
 
 Amplify.configure(awsconfig);
@@ -48,7 +50,7 @@ const ShoppingList = () => {
         };
 
         return new Promise((resolve, reject) => {
-            AWS.config.update({ region: awsconfig.aws_cognito_region, 'accessKeyId': 'AKIAQVQQANQEDXBRR64Q', 'secretAccessKey': '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' });
+            AWS.config.update({ region: awsconfig.aws_cognito_region, 'accessKeyId': awsConfig.accessKeyId, 'secretAccessKey': awsConfig.secretAccessKey });
             var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
             cognitoidentityserviceprovider.listUsers(params, (err, data) => {
                 if (err) {

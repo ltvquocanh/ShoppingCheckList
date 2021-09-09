@@ -2,6 +2,7 @@ import Amplify, { Auth, API, graphqlOperation } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 import { listShoppingItems } from '../graphql/queries'
 import {updateShoppingItem} from '../graphql/mutations'
+import awsConfig from '../awsconfiguration';
 import AWS from 'aws-sdk';
 
 Amplify.configure(awsconfig);
@@ -15,7 +16,7 @@ export async function fetchUsers() {
     };
 
     return new Promise((resolve, reject) => {
-        AWS.config.update({ region: awsconfig.aws_cognito_region, 'accessKeyId': 'AKIAQVQQANQEDXBRR64Q', 'secretAccessKey': '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' });
+        AWS.config.update({ region: awsconfig.aws_cognito_region, 'accessKeyId': awsConfig.accessKeyId, 'secretAccessKey': awsConfig.secretAccessKey });
         var cognitoidentityserviceprovider = new AWS.CognitoIdentityServiceProvider();
         cognitoidentityserviceprovider.listUsers(params, (err, data) => {
             if (err) {
